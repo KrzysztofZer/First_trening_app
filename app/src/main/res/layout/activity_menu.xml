@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:maxHeight="5000dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/tlo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="5dp"
+            tools:context="com.example.kzerman.nauka.Menu">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="125dp"
+                android:layout_height="65dp"
+                android:onClick="KliknijRandom"
+                android:text="Random num"
+                app:layout_constraintBottom_toTopOf="@+id/PeselBut"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/Liczba"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Liczba"
+                android:layout_width="174dp"
+                android:layout_height="40dp"
+                android:text="TextView"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/Pesel"
+                app:layout_constraintLeft_toRightOf="@+id/button2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/PeselBut"
+                android:layout_width="128dp"
+                android:layout_height="62dp"
+                android:onClick="KliknijPesel"
+                android:text="Random PESEL"
+                app:layout_constraintBottom_toTopOf="@+id/button4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/Pesel"
+                app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+            <TextView
+                android:id="@+id/Pesel"
+                android:layout_width="177dp"
+                android:layout_height="41dp"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@+id/White"
+                app:layout_constraintLeft_toRightOf="@+id/PeselBut"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Liczba" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="KliknijKolor"
+                android:text="Change background color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Pesel"
+                app:layout_constraintVertical_bias="0.14" />
+
+            <Button
+                android:id="@+id/White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="DefaultColor"
+                android:text="Default"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.543"
+                app:layout_constraintLeft_toRightOf="@+id/button4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PeselBut"
+                app:layout_constraintVertical_bias="0.097" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="GoGallery"
+                android:text="Gallery"
+                app:layout_constraintBottom_toTopOf="@+id/button6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/ClockBut"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+            <Button
+                android:id="@+id/ClockBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="GoClock"
+                android:text="Clock"
+                app:layout_constraintBottom_toTopOf="@+id/Reklama"
+                app:layout_constraintLeft_toRightOf="@+id/button8"
+                app:layout_constraintRight_toLeftOf="@+id/SaveT"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+            <Button
+                android:id="@+id/MapsBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="GoMaps"
+                android:text="Maps"
+                app:layout_constraintBottom_toTopOf="@+id/SaveT"
+                app:layout_constraintHorizontal_bias="0.611"
+                app:layout_constraintLeft_toRightOf="@+id/ClockBut"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/White"
+                app:layout_constraintVertical_bias="0.32999998" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="GoWykop"
+                android:text="Wykop"
+                app:layout_constraintBottom_toTopOf="@+id/spinner"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/Reklama"
+                app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+            <Button
+                android:id="@+id/Reklama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="GoAD"
+                android:text="AD"
+                app:layout_constraintBottom_toTopOf="@+id/spinner"
+                app:layout_constraintLeft_toRightOf="@+id/button6"
+                app:layout_constraintRight_toLeftOf="@+id/SaveT"
+                app:layout_constraintTop_toBottomOf="@+id/ClockBut" />
+
+            <Button
+                android:id="@+id/SaveT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="GoText"
+                android:text="Text saving"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/ClockBut"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MapsBut" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="191dp"
+                android:layout_height="57dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="104dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="104dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.098"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button6"
+                app:layout_constraintVertical_bias="0.31" />
+
+            <Button
+                android:id="@+id/testBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="TestBut"
+                android:text="Test"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.028"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner"
+                app:layout_constraintVertical_bias="0.285" />
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:scrollbars="vertical"
+                        android:layout_weight="0.80">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <Button
+                                    android:id="@+id/SystInf"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:onClick="GoSystemInfo"
+                                    android:text="System info" />
+
+                                <Button
+                                    android:id="@+id/button9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:onClick="goBubble"
+                                    android:text="bubble screen" />
+
+                                <Button
+                                    android:id="@+id/WeatherBut"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:onClick="WeatherButton"
+                                    android:text="Weather" />
+
+                                <Button
+                                    android:id="@+id/Scanerbut"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_weight="1"
+                                    android:onClick="GoScaner"
+                                    android:text="QR Scaner" />
+
+                            </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/floatingActionButton"
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:minHeight="?attr/actionBarSize"
+                            android:onClick="GoFloat"
+                            app:srcCompat="?android:attr/alertDialogIcon"
+                            tools:layout_editor_absoluteX="-137dp"
+                            tools:layout_editor_absoluteY="585dp" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/FlashlightBut"
+                            android:layout_width="86dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.99"
+                            android:clickable="true"
+                            android:onClick="Flashlight"
+                            app:fabSize="mini"
+                            app:srcCompat="?android:attr/fingerprintAuthDrawable" />
+
+                        <Button
+                            android:id="@+id/button10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="testData"
+                            android:text="Data" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="1790dp"
+                        android:layout_height="152dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="2.67"
+                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has \nbeen the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type \nspecimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially \nunchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

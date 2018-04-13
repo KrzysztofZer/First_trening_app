@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.kzerman.nauka.SystemInfo"
+
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/info1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="51dp" />
+
+        <TextView
+            android:id="@+id/info3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+        <TextView
+            android:id="@+id/info4"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="121dp" />
+
+        <TextView
+            android:id="@+id/info5"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="156dp" />
+
+        <TextView
+            android:id="@+id/info6"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="191dp" />
+
+        <TextView
+            android:id="@+id/info7"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+    </LinearLayout>
+
+

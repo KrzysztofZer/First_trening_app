@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?> <!--<!DOCTYPE android.support.constraint.ConstraintLayout <!-ELEMENT android.support.constraint.ConstraintLayout (uses-permission|com.google.android.gms.maps.MapView|WebView)*><!ATTLIST android.support.constraint.ConstraintLayoutxmlns:android CDATA #REQUIREDxmlns:app CDATA #REQUIREDxmlns:tools CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDtools:context CDATA #REQUIRED><!ELEMENT uses-permission (#PCDATA)><!ATTLIST uses-permissionandroid:name CDATA #REQUIRED><!ELEMENT com.google.android.gms.maps.MapView (#PCDATA)><!ATTLIST com.google.android.gms.maps.MapViewandroid:id CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_marginBottom CDATA #REQUIREDandroid:layout_marginEnd CDATA #REQUIREDandroid:layout_marginLeft CDATA #REQUIREDandroid:layout_marginRight CDATA #REQUIREDandroid:layout_marginStart CDATA #REQUIREDandroid:layout_marginTop CDATA #REQUIREDapp:layout_constraintBottom_toBottomOf CDATA #REQUIREDapp:layout_constraintLeft_toLeftOf CDATA #REQUIREDapp:layout_constraintRight_toRightOf CDATA #REQUIREDapp:layout_constraintTop_toTopOf CDATA #REQUIREDapp:layout_constraintVertical_bias CDATA #REQUIRED><!ELEMENT WebView (#PCDATA)><!ATTLIST WebViewandroid:id CDATA #REQUIREDandroid:layout_width CDATA #REQUIREDandroid:layout_height CDATA #REQUIREDandroid:layout_marginTop CDATA #REQUIREDapp:layout_constraintTop_toBottomOf CDATA #REQUIREDapp:layout_constraintBottom_toBottomOf CDATA #REQUIREDandroid:layout_marginBottom CDATA #REQUIREDandroid:layout_marginRight CDATA #REQUIREDapp:layout_constraintRight_toRightOf CDATA #REQUIREDandroid:layout_marginLeft CDATA #REQUIREDapp:layout_constraintLeft_toLeftOf CDATA #REQUIRED  > -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mapwithmarker"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.kzerman.nauka.Maps">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:context="com.example.kzerman.nauka.Maps"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
